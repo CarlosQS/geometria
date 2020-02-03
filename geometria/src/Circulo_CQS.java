@@ -6,6 +6,9 @@ public class Circulo_CQS extends FiguraGeometrica_CQS {
 	
 	public Circulo_CQS(double r, String tipoFigura) {
 		super(tipoFigura);
+		if(r <0) {
+			radio = (-1)*r;
+		}
 		radio = r;
 	}
 
